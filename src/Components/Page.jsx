@@ -42,8 +42,8 @@ export const Page=()=>{
         <Card sx={{height:90+'vh',width:108+'vh',marginLeft:3+'vh',textAlign:"left"}}>
         <CardContent>
             <Typography variant="h6"></Typography>
-            <Grid container spacing={2}>
-                <Grid item xs={12}><Typography variant="subtitle1" >General information</Typography></Grid>
+            <Grid container spacing={2} >
+                <Grid item xs={12} ><Typography variant="subtitle1" >General information</Typography></Grid>
                 <Grid item xs={6}><Typography variant="subtitle2">General information</Typography></Grid>
                 <Grid item xs={6}><Typography variant="subtitle2">General information</Typography></Grid>
                 <Grid item xs={6}><TextField placeholder="Enter your first name" fullWidth  size="small"></TextField></Grid>
@@ -76,25 +76,33 @@ export const Page=()=>{
                 <Grid item xs={2}><Button variant="contained" sx={{bgcolor:"black"}} size="small">Save all</Button></Grid>
             </Grid>
         </CardContent>
-        </Card> 
+        </Card>
+         
         <Stack>
         <Card sx={{height:65+'vh',width:65+'vh',marginLeft:3+'vh'}}>
             <CardContent>
-            <Card   sx={{background: `url('https://www.geocore.cz/wp-content/uploads/2017/12/uponor-varicool-carbon-s-1.jpg')`, // Replace with your image path
+           <Card    sx={{  background: `url('https://www.geocore.cz/wp-content/uploads/2017/12/uponor-varicool-carbon-s-1.jpg')`, 
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: 250,}}>
-           <Card sx={{height:25+'vh',width:25+'vh',borderRadius:50+'%',marginLeft:20+'vh',marginTop:15+'vh',position:"static",zIndex:2,background: `url('https://demos.creative-tim.com/impact-design-system/front/assets/img/team/profile-picture-1.jpg')`,height: 200,width:200,}}>
-         </Card>
-            </Card>
-        <Typography variant="h6" sx={{marginTop:5+'vh'}}>Neil sims</Typography>
+        height: 200, postion:"static"}}>
+
+           <Card sx={{height:25+'vh',width:25+'vh',borderRadius:50+'%',marginLeft:20+'vh',zIndex:"3",position:'static',position:"absolute",marginTop:12+'vh'}}>
+           <CardMedia 
+          component="img"
+          height="180"
+          image="https://demos.creative-tim.com/impact-design-system/front/assets/img/team/profile-picture-1.jpg"
+          alt="green iguana"
+        />
+        </Card></Card>
+        <Typography variant="h6" sx={{marginTop:10+'vh'}}>Neil sims</Typography>
           <Typography variant="subtitle1">Senior software engineer <br/>
           New york,USA
           </Typography>
           <Grid container spacing={2} sx={{marginLeft:5+'vh'}}>
-          <Grid item xs={4}><Button variant="contained" size="small" startIcon={<GroupAddIcon  />}>Connect</Button></Grid>
-          <Grid item xs={5}><Button variant="contained" size="small">send message</Button></Grid>
-          </Grid> </CardContent>
+          <Grid item xs={4}><Button variant="contained" size="small" startIcon={<GroupAddIcon  />} sx={{bgcolor:"black"}}>Connect</Button></Grid>
+          <Grid item xs={5}><Button variant="contained" size="small" sx={{bgcolor:"#29b6f6"}}>send message</Button></Grid>
+          </Grid>
+           </CardContent>
         </Card> 
         <Card sx={{height:17+'vh',width:65+'vh',marginLeft:3+'vh',marginTop:2+'vh'}}>
             <CardContent>
