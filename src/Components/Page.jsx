@@ -1,5 +1,5 @@
 import React from "react";
-import { Box,Stack,Card,CardContent, Grid,Button, Avatar, Typography, TextField, CardMedia } from "@mui/material";
+import { Box,Stack,Card,CardContent, Grid,Button, Avatar, Typography, TextField, CardMedia,Badge } from "@mui/material";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
@@ -26,7 +26,8 @@ export const Page=()=>{
               <Grid item xs={4}></Grid>
               <Box sx={{marginLeft:45+'vh'}}>
                 <Stack direction="row">
-                  <NotificationsIcon sx={{marginLeft:1+'vh'}}/>
+                   <Badge color="error" variant="dot" >
+                  <NotificationsIcon sx={{marginLeft:1+'vh'}}/></Badge>
                   <Avatar sx={{marginLeft:1+'vh'}} src="https://th.bing.com/th/id/R.7bf19f51786550d4e540c2dbd8f6dfb0?rik=Oyz02p%2f6FMFlUA&riu=http%3a%2f%2fwomen-hair-styles.com%2fwp-content%2fuploads%2f2013%2f08%2fnatural-curly-hairstyle-messy-look.jpg&ehk=b8KiyfUxdzkgVzglLPvMks8hb7N06tnYvj%2b6FUuWUUE%3d&risl=&pid=ImgRaw&r=0"/>
                   <Typography sx={{marginLeft:1+'vh'}}>Boniee Green</Typography>
                 </Stack>
